@@ -1,18 +1,14 @@
-package com.systech.schemeservice.dto;
+package com.systech.userservice.dto;
 
 import java.io.Serializable;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-/**
- * A DTO for the {@link com.systech.schemeservice.model.Scheme} entity
- */
 @Getter
 @Setter
 @Builder

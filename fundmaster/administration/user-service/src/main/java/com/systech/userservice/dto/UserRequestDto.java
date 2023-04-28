@@ -28,4 +28,5 @@ public class UserRequestDto implements Serializable {
     private  String username;
 
     private  String email;
+    private  Long  schemeId;
 }

@@ -6,6 +6,7 @@ import com.systech.userservice.service.UserService;
 import java.util.Collections;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,4 +33,9 @@ public class UserController {
         return userService.userService(userRequestDto);
 
     }
+    @GetMapping("/{userId}")
+    public UserResponseDto getUserWithSchemeInformation(@PathVariable("userId") Long userId) throws Exception {
+        return userService.getUserById(userId);
+    }
+
 }

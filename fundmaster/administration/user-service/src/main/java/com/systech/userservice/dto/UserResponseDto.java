@@ -30,4 +30,8 @@ public class UserResponseDto implements Serializable {
     private  String username;
 
     private  String email;
+
+    private  Long  schemeId;
+
+    private SchemeResponseDto schemeResponseDto;
 }

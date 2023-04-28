@@ -52,7 +52,7 @@ public class UserService {
             //call the scheme service to get scheme info
             var schemeResponseDto = webClientBuilder.build()
                     .get()
-                    .uri("http://localhost:8081/api/schemes/",
+                    .uri("http://SCHEME-SERVICE/api/schemes/",
                             uriBuilder -> uriBuilder.path(user.getSchemeId().toString()).build())
                     .retrieve()
                     .bodyToMono(SchemeResponseDto.class)

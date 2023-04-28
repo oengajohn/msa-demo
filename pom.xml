@@ -11,6 +11,7 @@
     <modules>
         <module>fundmaster</module>
         <module>service-registry</module>
+        <module>api-gateway</module>
 
     </modules>
 
@@ -25,10 +26,7 @@
         <spring-cloud.version>2022.0.2</spring-cloud.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
